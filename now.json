@@ -1,7 +1,7 @@
 {
   "redirects": [
     { "source": "/index.html", "destination": "/explore/indexpage", "statusCode": 301  },
-    { "source": "/o/(.)(.*)", "destination": "/explore/$2", "statusCode": 301  },
+    { "source": "/o/(.*)", "destination": "/explore/$1", "statusCode": 301  },
     { "source": "/wa/(.*)", "destination": "/explore/$1", "statusCode": 301  }
   ],
   "rewrites": [
