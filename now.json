@@ -1,10 +1,10 @@
 {
   "redirects": [
     { "source": "/index.html", "destination": "/explore/indexpage", "statusCode": 301  },
-    { "source": "/o/?(.*)", "destination": "/explore/$1", "statusCode": 301  },
-    { "source": "/wa/(.*)", "destination": "/explore/$1", "statusCode": 301  }
+    { "source": "/o/?((?!general).*)", "destination": "/explore/$1", "statusCode": 301  },
+    { "source": "/wa/((?!general).*)", "destination": "/explore/$1", "statusCode": 301  }
   ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "https://hq.asodesk.com/api/$1" }
+    { "source": "/api/((?!general).*)", "destination": "https://hq.asodesk.com/api/$1" }
   ]
 }
